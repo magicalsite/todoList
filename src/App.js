@@ -3,7 +3,6 @@ import './App.css';
 import ToDo from './components/ToDo';
 import ToDoHeader from './components/ToDoHeader';
 import ToDoInput from './components/ToDoInput';
-import Preloader from './components/Preloader';
 
 export const ToDoContext = React.createContext();
 

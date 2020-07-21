@@ -508,8 +508,10 @@ input::placeholder {
 }
 
 .todo__item-text {
+  text-align: left;
   line-height: 1.4;
   width: 80%;
+  overflow-wrap: break-word;
 }
 
 
@@ -549,7 +551,7 @@ input::placeholder {
   }
 }
 
-.vad {
+.anim {
   opacity: 0;
   animation: anim 1s linear 1 forwards;
 }
