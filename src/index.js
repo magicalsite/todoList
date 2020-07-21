@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Preloader from './components/Preloader';
+const AppWithPreloader = React.lazy(() => import('./App'));
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <React.Suspense fallback={<Preloader />}>
+      <AppWithPreloader />
+    </React.Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );
